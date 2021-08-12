@@ -11,7 +11,6 @@ import {
 } from "@arwes/core";
 
 import React, { useEffect, useState } from "react";
-import Popup from "./Popup";
 import { Link, useHistory } from "react-router-dom";
 
 const FONT_FAMILY_ROOT = '"Titillium Web", sans-serif';
@@ -60,10 +59,6 @@ const Home = () => {
             <FrameCorners animator={{ activate }} hover>
               <Card
                 animator={{ activate }}
-                image={{
-                  src: IMAGE_URL,
-                  alt: "A nebula",
-                }}
                 title="Null byte"
                 options={
                   <div>
@@ -79,7 +74,6 @@ const Home = () => {
                     </Button>
                   </div>
                 }
-                landscape
                 hover
                 style={{ maxWidth: 800 }}
               >
