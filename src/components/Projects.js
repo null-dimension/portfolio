@@ -14,7 +14,7 @@ import {
 
 const FONT_FAMILY_ROOT = '"Titillium Web", sans-serif';
 const FONT_FAMILY_CODE = '"Source Code Pro", monospace';
-const IMAGE_URL = "/wallpaper.jpg";
+const IMAGE_URL = `${process.env.PUBLIC_URL}/wallpaper.jpg`;
 
 let themeSettings = {};
 const animatorGeneral = { duration: { enter: 200, exit: 200, stagger: 30 } };
