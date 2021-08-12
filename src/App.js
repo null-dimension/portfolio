@@ -4,13 +4,13 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div className="App">
         <Switch>
-          <Route path="/projects">
+          <Route exact path="/projects">
             <Projects />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
